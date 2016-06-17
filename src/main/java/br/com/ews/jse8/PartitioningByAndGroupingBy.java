@@ -1,4 +1,6 @@
-package ews;
+package br.com.ews.jse8;
+
+import br.com.ews.jse8.pojo.Usuario;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -11,50 +13,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-
-
-class Usuario {
-	
-	private int pontos;
-	private String nome;
-	private boolean moderador;
-	
-	public Usuario(String nome) {
-		this.nome = nome;
-	}
-
-	public Usuario(String nome, int pontos) {
-		this.pontos = pontos;
-		this.nome = nome;
-		this.moderador = false;
-	}
-
-	public Usuario(String nome, int pontos, boolean moderador) {
-		this.pontos = pontos;
-		this.nome = nome;
-		this.moderador = moderador;
-	}
-
-	public int getPontos() {
-		return pontos;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void tornaModerador() {
-		this.moderador = true;
-	}
-	
-	public String toString() {
-		return "Usuario: " + nome + " Pontos: " + pontos;
-	}
-
-	public boolean isModerador() {
-		return moderador;
-	}
-}
 
 public class PartitioningByAndGroupingBy {
 	

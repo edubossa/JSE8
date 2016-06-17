@@ -1,4 +1,6 @@
-package ews;
+package br.com.ews.jse8;
+
+import br.com.ews.jse8.pojo.Usuario;
 
 import java.util.ArrayList;
 import java.util.Comparator;

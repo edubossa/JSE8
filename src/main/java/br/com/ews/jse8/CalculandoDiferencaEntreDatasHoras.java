@@ -1,4 +1,4 @@
-package ews;
+package br.com.ews.jse8;
 
 import java.time.Duration;
 import java.time.LocalDate;

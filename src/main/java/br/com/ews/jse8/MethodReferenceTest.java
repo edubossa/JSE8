@@ -1,4 +1,4 @@
-package ews;
+package br.com.ews.jse8;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

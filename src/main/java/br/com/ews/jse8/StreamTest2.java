@@ -1,4 +1,6 @@
-package ews;
+package br.com.ews.jse8;
+
+import br.com.ews.jse8.pojo.Usuario;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,51 +12,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class StreamTest2 {
-
-	static class Usuario {
-
-		private int pontos;
-		private String nome;
-		private boolean moderador;
-
-		public Usuario(String nome) {
-			this.nome = nome;
-		}
-
-		public Usuario(String nome, int pontos) {
-			this.pontos = pontos;
-			this.nome = nome;
-			this.moderador = false;
-		}
-
-		public Usuario(String nome, int pontos, boolean moderador) {
-			this.pontos = pontos;
-			this.nome = nome;
-			this.moderador = moderador;
-		}
-
-		public int getPontos() {
-			return pontos;
-		}
-
-		public String getNome() {
-			return nome;
-		}
-
-		public void tornaModerador() {
-			this.moderador = true;
-		}
-
-		public boolean isModerador() {
-			return moderador;
-		}
-
-		@Override
-		public String toString() {
-			return "Usuario [nome=" + nome + ", pontos=" + pontos + "]";
-		}
-
-	}
 	
 	private static void linha() {
 		System.out.println();
